@@ -29,5 +29,7 @@ using the [FastAPI framework](https://fastapi.tiangolo.com/) since it comes pack
 ## Basic Usage
 
 ## Further Improvements
-- [] Unit and integration testing 
-- [] 
+- [ ] Dockerize application
+- [ ] Deploy application
+- [ ] Fill in README
+- [ ] Hide sensitive variables
