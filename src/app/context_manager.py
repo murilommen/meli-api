@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 
-SQLALCHEMY_DATABASE_URL = "sqlite:///local.db"
+SQLALCHEMY_DATABASE_URI = "sqlite:///local.db"
 
 
 def get_db():
@@ -15,7 +15,7 @@ def get_db():
 
 
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,
+    SQLALCHEMY_DATABASE_URI,
     connect_args={"check_same_thread": False}
 )
 
