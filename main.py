@@ -2,8 +2,8 @@ import uvicorn
 from fastapi import FastAPI
 
 from src.app.routers import items
-from src.app import models
-from src.app.context_manager import engine
+from src.app.domain import models
+from src.app.infrastructure.context_manager import engine
 
 
 models.Base.metadata.create_all(bind=engine)

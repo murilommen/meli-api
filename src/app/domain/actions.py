@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 
-from src.app import models
+from src.app.domain import models
 
 
 def create_new_item(db: Session, title: str, description: str):

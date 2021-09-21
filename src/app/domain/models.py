@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 
-from src.app.context_manager import Base
+from src.app.infrastructure.context_manager import Base
 
 
 class Item(Base):

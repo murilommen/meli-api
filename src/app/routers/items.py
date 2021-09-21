@@ -3,9 +3,9 @@ from typing import List
 from fastapi import APIRouter, status, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from src.app import schemas
-from src.app import actions
-from src.app import context_manager
+from src.app.domain import schemas
+from src.app.domain import actions
+from src.app.infrastructure import context_manager
 
 router = APIRouter()
 

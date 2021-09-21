@@ -1,8 +1,7 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-
-from src.config.env_key import get_key
 
 
 def get_db():
@@ -13,7 +12,7 @@ def get_db():
         db.close()
 
 
-SQLALCHEMY_DATABASE_URI = get_key("SQLALCHEMY_DATABASE_URI")
+SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI") or "sqlite:///local.db"
 
 
 engine = create_engine(
